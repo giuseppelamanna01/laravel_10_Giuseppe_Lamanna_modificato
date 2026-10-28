@@ -8,6 +8,7 @@
       <div class="navbar-nav">
         <a class="nav-link" aria-current="page" href="{{route('home')}}">Home</a>
         <a class="nav-link" href="{{route('contact.us')}}">Contattaci</a>
+        <a class="nav-link" href="{{route('device.insert')}}">Raggruppa</a>
         <a class="nav-link" href="{{route('device.list')}}">Lista</a>
       </div>
     </div>
