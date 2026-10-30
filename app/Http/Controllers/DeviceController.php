@@ -31,4 +31,8 @@ class DeviceController extends Controller
         $devices = Device::all();
         return view('device.listdevices', ['devices'=>$devices]);
     }
+
+    public function dettaglio(Device $device){
+        return view('device.dettaglio', ['device'=>$device]);
+    }
 }

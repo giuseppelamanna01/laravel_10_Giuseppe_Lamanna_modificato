@@ -11,3 +11,4 @@ Route::get('/contattaci/invio/success', [PublicController::class, 'success'])->n
 Route::get('/device/insert', [DeviceController::class, 'insert'])->name('device.insert');
 Route::get('/devicesList', [DeviceController::class, 'deviceList'])->name('device.list');
 Route::post('/device/submit', [DeviceController::class, 'store'])->name('device.submit');
+Route::get('/device/{device}', [DeviceController::class, 'dettaglio'])->name('device.dettaglio');
