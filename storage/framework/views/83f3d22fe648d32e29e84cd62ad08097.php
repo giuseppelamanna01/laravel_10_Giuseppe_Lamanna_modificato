@@ -12,4 +12,4 @@
             </div>
         </div>
     </div>
-</footer><?php /**PATH C:\Users\39340\laravel_Storage_Rules\laravel_10_Storage_Rules\resources\views/components/footer.blade.php ENDPATH**/ ?>
+</footer><?php /**PATH C:\Users\39340\laravel_10_Giuseppe_Lamanna\resources\views/components/footer.blade.php ENDPATH**/ ?>

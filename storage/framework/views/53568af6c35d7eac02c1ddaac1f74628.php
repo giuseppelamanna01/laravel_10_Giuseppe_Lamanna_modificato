@@ -59,4 +59,4 @@
 <?php if (isset($__componentOriginal23a33f287873b564aaf305a1526eada4)): ?>
 <?php $component = $__componentOriginal23a33f287873b564aaf305a1526eada4; ?>
 <?php unset($__componentOriginal23a33f287873b564aaf305a1526eada4); ?>
-<?php endif; ?><?php /**PATH C:\Users\39340\laravel_Storage_Rules\laravel_10_Storage_Rules\resources\views/device/insDev.blade.php ENDPATH**/ ?>
+<?php endif; ?><?php /**PATH C:\Users\39340\laravel_10_Giuseppe_Lamanna\resources\views/device/insDev.blade.php ENDPATH**/ ?>

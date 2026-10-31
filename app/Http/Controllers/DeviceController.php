@@ -35,4 +35,6 @@ class DeviceController extends Controller
     public function dettaglio(Device $device){
         return view('device.dettaglio', ['device'=>$device]);
     }
+
+    
 }

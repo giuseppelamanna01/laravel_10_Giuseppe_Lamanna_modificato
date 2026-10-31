@@ -48,4 +48,4 @@
 <?php unset($__componentOriginal8a8716efb3c62a45938aca52e78e0322); ?>
 <?php endif; ?>
 </body>
-</html><?php /**PATH C:\Users\39340\laravel_Storage_Rules\laravel_10_Storage_Rules\resources\views/components/layout.blade.php ENDPATH**/ ?>
+</html><?php /**PATH C:\Users\39340\laravel_10_Giuseppe_Lamanna\resources\views/components/layout.blade.php ENDPATH**/ ?>

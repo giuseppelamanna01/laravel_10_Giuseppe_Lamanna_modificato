@@ -8,20 +8,26 @@
 <?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
 <?php endif; ?>
 <?php $component->withAttributes([]); ?>
-<div class="container mt-5">
-  <div class="row">
-    <h1 class="text-light">Dettaglio del dispositivo</h1>
-    <div class="col-md-6">
-      <img src="<?php echo e(Storage::url($device->image)); ?>" class="img-fluid rounded" alt="Immagine di dettaglio del dispositivo">
+    <div class="container">
+        <h1 class="text-light">Raggruppa tutti i tuoi dispositivi elettronici in questa pagina</h1>
+
+        <div class="row">
+            <?php $__currentLoopData = $devices; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $device): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                <div class="col-12 col-md-4 mt-3">
+                    <div class="card">
+                        <div class="card-body">
+                           <a href="<?php echo e(route('device.dettaglio', $device)); ?>">
+                                <img src="<?php echo e(Storage::url($device->image)); ?>" class="immagine">
+                            </a>
+                            <h5 class="card-title"><?php echo e($device->name); ?></h5>
+                            <p class="card-text"><?php echo e($device->category); ?></p>
+                            <p class="card-text"><?php echo e($device->serialNumber); ?></p>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+        </div>
     </div>
-    <div class="col-md-6">
-      <h1 class="text-light"><?php echo e($device->name); ?></h1>
-      <p class="text-light">Categoria: <?php echo e($device->category); ?></p>
-      <p class="text-light">Serial Number: <?php echo e($device->serialNumber); ?></p>
-      <a href="<?php echo e(route('device.list')); ?>" class="btn btn-secondary mt-3">Torna alla lista</a>
-    </div>
-  </div>
-</div>
  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
 <?php if (isset($__attributesOriginal23a33f287873b564aaf305a1526eada4)): ?>
@@ -31,4 +37,4 @@
 <?php if (isset($__componentOriginal23a33f287873b564aaf305a1526eada4)): ?>
 <?php $component = $__componentOriginal23a33f287873b564aaf305a1526eada4; ?>
 <?php unset($__componentOriginal23a33f287873b564aaf305a1526eada4); ?>
-<?php endif; ?><?php /**PATH C:\Users\39340\laravel_Storage_Rules\laravel_10_Storage_Rules\resources\views/device/dettaglio.blade.php ENDPATH**/ ?>
+<?php endif; ?><?php /**PATH C:\Users\39340\laravel_10_Giuseppe_Lamanna\resources\views/device/listdevices.blade.php ENDPATH**/ ?>

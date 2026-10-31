@@ -11,6 +11,32 @@
         <a class="nav-link" href="{{route('device.insert')}}">Inserisci/Salva dispositivo</a>
         <a class="nav-link" href="{{route('device.list')}}">Lista</a>
       </div>
+      <ul>
+        <li class="nav-item dropdown">
+          @auth 
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Ciao, {{Auth::user()->name}}
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('form-logout').submit();" class="dropdown-item">Logout</a>
+              <form action="{{route('logout')}}" method="POST" id="form-logout" class="d-none">
+                @csrf
+              </form>
+            </li>
+          </ul>
+          @else
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Ciao, ospite!
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{{route('login')}}">Login</a></li>
+            <li><a class="dropdown-item" href="{{route('register')}}">Registrati</a></li>
+            
+          </ul>
+          @endauth
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
